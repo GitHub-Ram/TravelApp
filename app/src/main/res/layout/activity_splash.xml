@@ -31,14 +31,16 @@
             style="?metaButtonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginBottom="40dp"
             android:layout_gravity="bottom|center_horizontal"
             android:background="@android:color/transparent"
             android:orientation="vertical"
             tools:ignore="UselessParent">
             <LinearLayout
-                android:id="@+id/linearWindow"
+                android:id="@+id/linearLFB"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:orientation="vertical"
                 android:background="@drawable/corner"
                 android:layout_marginLeft="52dp"
@@ -51,11 +53,12 @@
                     />
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/linearlayoutContent6_1"
+                android:id="@+id/linearLG"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:visibility="gone"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="48dp"
                 android:layout_marginRight="48dp"
