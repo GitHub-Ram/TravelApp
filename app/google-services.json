@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "152289994185",
+    "project_id": "travelapp-dc8a0"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152289994185:android:1d9d0b04a8bbcc89",
+        "android_client_info": {
+          "package_name": "com.ixigo.travelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152289994185-i5eana7rffk87no0hprbug3fc5un07sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ixigo.travelapp",
+            "certificate_hash": "07a0761e075c61d9eba64c58636e48aa10eb99ae"
+          }
+        },
+        {
+          "client_id": "152289994185-ud5qsvr0k45sp6n01pr4supdgtksb2k9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7TLQ1zGzxo1qWwj-34pqI2gNSbuBI0QU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
