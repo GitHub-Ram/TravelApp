@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ixigo.travelapp.activity.TripActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/sourceTravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:hint="Source"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/destinationTravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:hint="Destination"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/goDate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Start Date"
+                android:drawableRight="@drawable/calender_icon"
+                android:textColor="@android:color/black"
+                android:gravity="left|center_vertical"
+                android:clickable="true"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/goDateText"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center_vertical"
+                android:clickable="true"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/onwayRadio"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="One way Journey"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/bothwayRadio"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Return Journey"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/returnDateLayout"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/returnDate"
+                android:layout_width="0dp"
+                android:gravity="left|center_vertical"
+                android:text="Return Date"
+                android:drawableRight="@drawable/calender_icon"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/returnDateText"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center_vertical"
+                android:clickable="true"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/tripName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Trip Name"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_corner"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/calenderLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="90dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+            <CalendarView
+                android:id="@+id/simpleCalendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </CalendarView>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -16,7 +16,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.LetMeKnowActivity"
-            android:label="@string/trip_planner">
+            android:label="@string/trip_planner"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -43,9 +44,15 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="com.ixigo.travelapp.activity.STARTINGPOINT" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.PlanActivity"
+            android:label="Add Trip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name=".activity.PlanActivityNext"></activity>
     </application>
 
 </manifest>
